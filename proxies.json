@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+      "faceAPI": {
+        "matchCondition": {
+          "route": "{*path}"
+        },
+        "backendUri": "%FACE_URL%{*path}"
+      }
+    }
+  }
